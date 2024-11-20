@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Page setup configurations -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!--Calling CSS-->
+    <link href="blackjack.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!--Player mode display-->
+    <button id="playermode-button">Player Mode</button>
+    <button id="adminmode-button">Admin Mode</button>
+    <h1 class="header">BLACKJACK</h1>
+    <div id="container" class="hidden">
+      <div id="gameIntro">
+        <h3>♠️ Welcome to the Blackjack game! ♣️</h3>
+        <h4>
+          <u>Instructions:</u> Begin to play by drawing your card using the Deal
+          button.
+        </h4>
+      </div>
+      <p>Game Controls:</p>
+      <input
+        type="hidden"
+        placeholder="Press Deal To Start The Game"
+        id="input-field"
+      />
+      <button id="deal-button">Deal</button>
+      <button id="hit-button">Hit</button>
+      <button id="stand-button">Stand</button>
+      <p>Results:</p>
+      <div id="output-div"></div>
+    </div>
+
+    <!--Admin mode display-->
+    <div id="container2" class="hidden">
+      <h2>🛠️ Admin Mode 🛡️</h2>
+      <label for="stat-to-edit">Select stat to edit:</label>
+      <select id="stat-to-edit">
+        <option value="totalRounds">Total Rounds</option>
+        <option value="playerWins">Player Wins</option>
+        <option value="computerWins">Computer Wins</option>
+      </select>
+      <button id="delete-button">Delete Stats</button>
+
+      <br />
+      <label for="new-value">New Value:</label>
+      <input type="number" id="new-value" />
+      <button id="submit-button">Update Stats</button>
+    </div>
+
+    <!-- Import axios -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.7.7/axios.min.js"></script>
+
+    <!-- Import program logic -->
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+    <script src="buttonsfunc.js"></script>
+  </body>
+</html>

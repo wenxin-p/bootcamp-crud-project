@@ -1,0 +1,216 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  /* margin-left: 30px;
+  margin-right: 30px; */
+  background-color: white;
+  color: white; /* sets the font color */
+  background-image: url("https://images.unsplash.com/photo-1655159428752-c700435e9983?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YmxhY2tqYWNrfGVufDB8fDB8fHww"); /* The image used */
+}
+
+.hidden {
+  display: none;
+}
+
+#deal-button {
+  background-color: darkslategrey;
+  color: white;
+  font-size: 16px;
+  border-radius: 12px;
+  border: 2px solid darkslategray;
+  text-align: center;
+  text-decoration: none;
+}
+
+#deal-button:hover {
+  background-color: black;
+  color: white;
+}
+
+#stand-button {
+  background-color: darkslategrey;
+  color: white;
+  font-size: 16px;
+  border-radius: 12px;
+  border: 2px solid darkslategray;
+  text-align: center;
+  text-decoration: none;
+}
+
+#stand-button:hover {
+  background-color: black;
+  color: white;
+}
+
+#hit-button {
+  background-color: darkslategrey;
+  color: white;
+  font-size: 16px;
+  border-radius: 12px;
+  border: 2px solid darkslategray;
+  text-align: center;
+  text-decoration: none;
+}
+
+#hit-button:hover {
+  background-color: black;
+  color: white;
+}
+
+#playermode-button {
+  background-color: darkslategrey;
+  color: white;
+  font-size: 16px;
+  border-radius: 12px;
+  border: 2px solid darkslategray;
+  text-align: center;
+  text-decoration: none;
+  margin: 15px 15px;
+}
+
+#playermode-button:hover {
+  background-color: black;
+  color: white;
+}
+
+#adminmode-button {
+  background-color: darkslategrey;
+  color: white;
+  font-size: 16px;
+  border-radius: 12px;
+  border: 2px solid darkslategray;
+  text-align: center;
+  text-decoration: none;
+}
+
+#adminmode-button:hover {
+  background-color: black;
+  color: white;
+}
+
+#submit-button {
+  background-color: darkslategrey;
+  color: white;
+  font-size: 16px;
+  border-radius: 12px;
+  border: 2px solid darkslategray;
+  text-align: center;
+  text-decoration: none;
+}
+
+#submit-button:hover {
+  background-color: black;
+  color: white;
+}
+
+#delete-button {
+  background-color: darkslategrey;
+  color: white;
+  font-size: 16px;
+  border-radius: 12px;
+  border: 2px solid darkslategray;
+  text-align: center;
+  text-decoration: none;
+}
+
+#delete-button:hover {
+  background-color: black;
+  color: white;
+}
+
+#output-div img {
+  color: black;
+  display: block;
+  max-width: 100%;
+  max-height: 200px;
+}
+
+.header {
+  text-align: center;
+  font-weight: bold;
+  color: white;
+  font-family: sans-serif;
+  margin-bottom: 3rem;
+}
+
+#container {
+  background-color: rgba(66, 66, 66, 0.719);
+  color: rgb(246, 243, 243);
+  margin-top: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: auto;
+
+  max-width: 800px;
+  padding: 38px 31px;
+}
+
+#container2 {
+  background-color: rgba(144, 144, 144, 0.739);
+  color: white;
+  margin-top: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: auto;
+  max-width: 800px;
+  padding: 38px 31px;
+}
+
+input {
+  font-size: 16px;
+  color: pink;
+  line-height: 33px;
+  margin: 0 0 23px 0;
+  padding: 0 9px;
+  width: 100%;
+}
+
+button {
+  font-size: 14px;
+  line-height: 33px;
+  margin: 0 0 23px 0;
+  padding: 0 6px;
+}
+
+#output-div {
+  background-color: rgb(34, 33, 33);
+  border-radius: 12px;
+  margin: 10px auto;
+  padding: 20px;
+  width: 100%;
+}
+
+#stat-to-edit {
+  background-color: rgb(34, 33, 33);
+  font-size: 14px;
+  color: white;
+  border-radius: 12px;
+  margin: 10px auto;
+  padding: 10px;
+}
+
+#new-value {
+  background-color: rgb(34, 33, 33);
+  border-radius: 12px;
+  margin: 10px auto;
+  padding: 10px;
+  width: 100%;
+}
+
+input[type="text"] {
+  background-color: rgb(34, 33, 33);
+  border-radius: 12px;
+  margin: 10px auto;
+  width: 100%;
+  border: 2px solid rgb(34, 33, 33);
+}
+
+/* increase header font size on wider screens */
+@media screen and (min-width: 600px) {
+  .header {
+    font-size: 2rem;
+  }
+}
